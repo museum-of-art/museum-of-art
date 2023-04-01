@@ -540,6 +540,10 @@ footer{
         flex-wrap: wrap;
     }
 
+    .justify-content {
+        justify-content: center !important;
+    }
+
     .painting-name{
         padding: 13px;
     }
