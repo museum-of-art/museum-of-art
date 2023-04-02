@@ -5,6 +5,20 @@ body{
     font-family: 'Dosis', sans-serif;
     margin: 0px;
 }
+
+:root{
+    --Dark-Cerulean:#084B83;
+    --petrol:#03616D;
+    --dune:#333;
+    --porcelain: #f2f2f2;
+    --Limed-Spruce: #36454f;
+    --Seashell:#F6F1F1;
+    --Blue-Chill:#0E8388;
+    --Plantation: #2E4F4F;
+    --flat-blue:#4267B2;
+    --azure:#1DA1F2;
+    --red:#FF0000;
+}
 /* menu start  */
 
 .display-none{
@@ -32,27 +46,27 @@ body{
 }
 
 .extra-link-button-style{
-    border: 2px solid #084B83;
-    background-color: #084B83;
-    color: white;
+    border: 2px solid var(--Dark-Cerulean);
+    background-color: var(--Dark-Cerulean);
+    color: var(--porcelain);
 }
 
 .extra-link-button-style:hover{
-    border-color: #084B83;
-    background-color: white;
-    color: #084B83;
+    border-color: var(--Dark-Cerulean);
+    background-color: var(--porcelain);
+    color: var(--Dark-Cerulean);
 }
 
 .extra-link-donate-style{
-    border: 2px solid #084B83;
-    background-color: white;
-    color: #084B83;
+    border: 2px solid var(--petrol);
+    background-color: var(--petrol);
+    color: var(--porcelain);
 }
 
 .extra-link-donate-style:hover{
-    border-color: #03616D;
-    background-color: #03616D;
-    color: white;
+    border-color: var(--Dark-Cerulean);
+    background-color: var(--porcelain);
+    color: var(--Dark-Cerulean);
 }
 
 .extra-link-search{
@@ -78,13 +92,13 @@ body{
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--dune);
     width: 100%;
 }
   
 .topnav a {
     display: block;
-    color: #f2f2f2;
+    color: var(--porcelain);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -92,15 +106,15 @@ body{
 }
   
 .topnav a:hover {
-    background-color: #084B83;
-    color: white;
+    background-color: var(--Dark-Cerulean);
+    color: var(--porcelain);
 }
 
 /*menu black */
   
 .topnav a.active {
-    background-color: #CCD5AE;
-    color: white;
+    background-color: var(--Dark-Cerulean);
+    color: var(--porcelain);
 }
   
 .topnav .icon {
@@ -116,7 +130,7 @@ body{
 }
 
 .name-museum{
-    color: #084B83 !important;
+    color: var(--Dark-Cerulean) !important;
     font-size: 1.5rem;
     letter-spacing: 10px;
     pointer-events: none;
@@ -136,7 +150,7 @@ body{
 }
 
 h1{
-    color: #36454f;
+    color: var(--Limed-Spruce);
     font-size: 2rem;
 }
 
@@ -156,8 +170,8 @@ h1{
 
 .name-art{
     width: 334px;
-    border: 4px solid #084B83;
-    background-color: #F6F1F1;
+    border: 4px solid var(--Dark-Cerulean);
+    background-color: var(--Seashell);
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -165,7 +179,7 @@ h1{
 }
 
 .name-art:hover{
-    border-color: #0E8388;
+    border-color: var(--Blue-Chill);
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -187,12 +201,12 @@ h1{
 }
 
 .art-name{
-    background-color: #03616D;
-    color: white;
+    background-color: var(--petrol);
+    color: var(--porcelain);
 }
 
 .description{
-    background-color: white;
+    background-color: var(--porcelain);
     padding:5px 10px;
     height: 143px;
     font-family: sans-serif;
@@ -202,15 +216,15 @@ div > a {
     padding: 5px 10px;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #2E4F4F;
+    color: var(--Plantation);
 }
 
 div > a:hover{
-    color: #0E8388;
+    color: var(--Blue-Chill);
 }
 
 .link-style{
-    background-color: white;
+    background-color: var(--porcelain);
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -230,7 +244,7 @@ div > a:hover{
 /* Newsletter Signup */
 
 .Newsletter-signup{
-    background-color: #F6F1F1;
+    background-color: var(--Seashell);
     margin-top: 20px;
     padding: 20px 10px;
 
@@ -244,33 +258,36 @@ div > a:hover{
 
 button{
     width: 100%;
-    background-color: #0E8388;
-    color: white;
-    padding: 5px 10px;
-    border-color: #2E4F4F;
+    background-color: var(--petrol);
+    color: var(--porcelain);
+    border-radius: 5px;
+    padding: 10px 10px;
+    border-color: var(--Plantation);
     margin-top: 10px;
     border: 2px;
 }
 
 button:hover{
-    background-color: #2E4F4F;
-    border-color: #0E8388;
+    background-color: var(--Blue-Chill);
+    border-color: var(--Blue-Chill);
 }
 
-label, input{
+.form-label, input{
     margin-top: 5px;
     display: grid;
 }
 
-label{
+.form-label{
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 input{
     width: 98%;
+    height: 20px;
 }
 .body-formsubmitted{
-    background-color: #FFACAC !important;
+    background-color: var(--porcelain) !important;
 }
 
 /* formsubmitted page */
@@ -292,10 +309,14 @@ input{
 
 /* Footer */
 footer{
-    background-color: #333;
-    color: white;
+    background-color: var(--dune);
+    color: var(--porcelaine);
     padding: 25px;
     font-size: 1.2rem;
+}
+
+.name-copyright{
+    color: var(--porcelain);
 }
 
 .media-icon{
@@ -304,11 +325,11 @@ footer{
 
 /* changing the color of the icons */
 .media-icon > a > svg{
-    color: white;
+    color: var(--porcelain);
 }
 
 .facebook:hover{
-    fill:#4267B2;
+    fill:var(--flat-blue);
 }
 
 .instagram:hover{
@@ -316,11 +337,11 @@ footer{
 }
 
 .twitter:hover{
-    fill:#1DA1F2;
+    fill:var(--azure);
 }
 
 .youtube:hover{
-    fill:#FF0000;
+    fill:var(--red);
 }
 
 .section-link{
@@ -556,7 +577,7 @@ footer{
         height: 10px;
     }
 
-    label, input {
+    .form-label, input {
         margin-top: 8px;
     }
 
