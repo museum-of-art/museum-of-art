@@ -233,7 +233,7 @@ div > a {
 }
 
 div > a:hover{
-    text-decoration: underline;
+    color: var(--porcelain);
 }
 
 .link-style{
@@ -244,6 +244,10 @@ div > a:hover{
     justify-content: end;
 }
 
+.link-style:hover > a{
+    color: var(--black);
+    text-decoration: underline;
+}
 .view-phone{
     display: none;
 }
