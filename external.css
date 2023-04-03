@@ -4,10 +4,11 @@
 body{
     font-family: 'Dosis', sans-serif;
     margin: 0px;
+    color: var(--black);
 }
 
 :root{
-    --Dark-Cerulean:#084B83;
+    /* --Dark-Cerulean:#084B83;
     --petrol:#03616D;
     --dune:#333;
     --porcelain: #f2f2f2;
@@ -17,7 +18,18 @@ body{
     --Plantation: #2E4F4F;
     --flat-blue:#4267B2;
     --azure:#1DA1F2;
-    --red:#FF0000;
+    --red:#FF0000; */
+
+    --Dark-Cerulean: #d5bdaf;
+    --porcelain: #f2f2f2;
+    --petrol: #e3d5ca;
+    --dune: #d6ccc2;
+    --Seashell: #F6F1F1;
+    --flat-blue: #4267B2;
+    --azure: #1DA1F2;
+    --red: #FF0000;
+    --grey: #f0f0f0;
+    --black: black;
 }
 /* menu start  */
 
@@ -29,6 +41,7 @@ body{
     height: 60px;
     display: flex;
     width: 100%;
+    background-color: var(--grey);
 }
 
 .museum-name{
@@ -48,25 +61,25 @@ body{
 .extra-link-button-style{
     border: 2px solid var(--Dark-Cerulean);
     background-color: var(--Dark-Cerulean);
-    color: var(--porcelain);
+    color: var(--black);
 }
 
 .extra-link-button-style:hover{
     border-color: var(--Dark-Cerulean);
     background-color: var(--porcelain);
-    color: var(--Dark-Cerulean);
+    color: var(--black);
 }
 
 .extra-link-donate-style{
     border: 2px solid var(--petrol);
     background-color: var(--petrol);
-    color: var(--porcelain);
+    color: var(--black);
 }
 
 .extra-link-donate-style:hover{
     border-color: var(--Dark-Cerulean);
     background-color: var(--porcelain);
-    color: var(--Dark-Cerulean);
+    color: var(--black);
 }
 
 .extra-link-search{
@@ -98,7 +111,7 @@ body{
   
 .topnav a {
     display: block;
-    color: var(--porcelain);
+    color: var(--black);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -130,7 +143,7 @@ body{
 }
 
 .name-museum{
-    color: var(--Dark-Cerulean) !important;
+    color: var(--black) !important;
     font-size: 1.5rem;
     letter-spacing: 10px;
     pointer-events: none;
@@ -150,7 +163,7 @@ body{
 }
 
 h1{
-    color: var(--Limed-Spruce);
+    color: var(--black);
     font-size: 2rem;
 }
 
@@ -170,7 +183,7 @@ h1{
 
 .name-art{
     width: 334px;
-    border: 4px solid var(--Dark-Cerulean);
+    border: 2px solid var(--Dark-Cerulean);
     background-color: var(--Seashell);
     margin: 10px;
     display: flex;
@@ -179,7 +192,7 @@ h1{
 }
 
 .name-art:hover{
-    border-color: var(--Blue-Chill);
+    border-color: var(--dune);
     box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -202,7 +215,7 @@ h1{
 
 .art-name{
     background-color: var(--petrol);
-    color: var(--porcelain);
+    color: var(--black);
 }
 
 .description{
@@ -216,17 +229,19 @@ div > a {
     padding: 5px 10px;
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--Plantation);
+    color: var(--black);
 }
 
 div > a:hover{
-    color: var(--Blue-Chill);
+    text-decoration: underline;
 }
 
 .link-style{
     background-color: var(--porcelain);
     padding-top: 5px;
     padding-bottom: 5px;
+    display: grid;
+    justify-content: end;
 }
 
 .view-phone{
@@ -258,18 +273,17 @@ div > a:hover{
 
 button{
     width: 100%;
-    background-color: var(--petrol);
-    color: var(--porcelain);
+    background-color: var(--Dark-Cerulean);
+    color: var(--black);
     border-radius: 5px;
     padding: 10px 10px;
-    border-color: var(--Plantation);
     margin-top: 10px;
     border: 2px;
 }
 
-button:hover{
-    background-color: var(--Blue-Chill);
-    border-color: var(--Blue-Chill);
+button:hover {
+    background-color: var(--dune);
+    /* border-color: red; */
 }
 
 .form-label, input{
@@ -316,7 +330,7 @@ footer{
 }
 
 .name-copyright{
-    color: var(--porcelain);
+    color: var(--black);
 }
 
 .media-icon{
@@ -325,18 +339,21 @@ footer{
 
 /* changing the color of the icons */
 .media-icon > a > svg{
-    color: var(--porcelain);
+    color: var(--black);
 }
 
 .facebook:hover{
+    color: var(--porcelain);
     fill:var(--flat-blue);
 }
 
 .instagram:hover{
+    color: var(--porcelain);
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
 .twitter:hover{
+    color: var(--porcelain);
     fill:var(--azure);
 }
 
@@ -356,7 +373,7 @@ footer{
 }
 
 .footer-link{
-    color: white;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -394,21 +411,21 @@ footer{
         display: contents;
     }
 
-    .extra-link-search{
-        border: 2px solid #084B83;
-        background-color: #084B83;
-        color: white;
+    .extra-link-search {
+        border: 2px solid var(--Dark-Cerulean);
+        background-color: var(--Dark-Cerulean);
+        color: var(--dark);
         padding: 2px 6px;
         border-radius: 8px;
         margin-right: 5px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 5px;
     }
     
     .extra-link-search:hover{
-        border-color: #084B83;
-        background-color: white;
-        color: #084B83;
+        border-color: var(--Dark-Cerulean);
+        background-color: var(--porcelain);
+        color: var(--black);
     }
 
     .justify-content {
